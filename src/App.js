@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Forecast from './components/Forecast';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <main role='main' className='flex-shrink-0'>
+        <div className='container text-center'>
+          <img src='weather-logo.png' alt='weather-logo' width='300px' />
+          <h1 className='mt-5 text-center'>REACT WEATHER APP</h1>
+          <p className='lead text-center'>get your local weather</p>
+        </div>
+        <Forecast />
+      </main>
+
+      <footer className='sticky-footer mt-auto py-3'>
+        <div className='container'>
+          <span className='text-muted'>made with &hearts; by handrei.</span>
+        </div>
+      </footer>
+    </>
   );
 }
 
