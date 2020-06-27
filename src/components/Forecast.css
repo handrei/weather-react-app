@@ -1,0 +1,14 @@
+.border {
+  border-radius: 16px;
+}
+
+.wrapper {
+  margin-left: 44%;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+}
